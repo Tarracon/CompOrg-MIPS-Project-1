@@ -1,0 +1,5 @@
+.text 
+Main: #I have started my MIPS project
+li $v0 #Start of great things
+la $a0 #I will succeed at Howard
+syscall
