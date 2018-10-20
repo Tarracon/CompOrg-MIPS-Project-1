@@ -1,5 +1,58 @@
 .text 
-Main: #I have started my MIPS project
-li $v0 #Start of great things
-la $a0 #I will succeed at Howard
+Main: #Read tutorial and figured out how to do project on October 20th at 12:14
+li $v0, 11 #Load command to print characters in v0 register
+la $a0, 64 #Load character '@' into 4 register
+syscall
+sub $v0, 10 #Subract from v0 to get 1, command to print integers
+sub $a0, 64 # sub from to print 0
+syscall
+addi $a0, 50 #Make 4 register store 2
+syscall 
+addi $a0, 6 #Make 4th register store 8
+syscall
+sub $a0, 5 #Make 4th register store 3
+syscall
+addi $a0, 6 #Make 4th register store 7
+syscall
+sub $a0, 3 #Make 4th register store 4
+syscall
+syscall
+addi $a0, 4 #Make 4th register store 8
+syscall
+addi $v0, 10 #Print out char again
+sub $a0, 46 #Print out new line (ASCII 10)
+syscall
+addi $a0, 56 #Store 'B'
+syscall
+addi $a0, 42 #Store 'l'
+syscall
+sub $a0, 11 #Store 'a'
+syscall
+addi $a0, 2 #Store 'c'
+syscall
+addi $a0, 8 #Store 'k'
+syscall
+addi $a0, 12 #Store 'w'
+syscall
+sub $a0, 18 #Store 'e'
+addi $a0, 7 #Store 'l'
+syscall
+syscall
+sub $a0, 64 #Store ','
+syscall
+sub $a0, 12 #Store space ' ' 
+syscall
+addi $a0, 52 #Store 'T'
+syscall
+addi $a0, 27 #Store 'e'
+syscall
+addi $a0, 13 #Store 'r'
+syscall
+sub $a0, 13 #Restore 'e'
+syscall
+addi $a0, 7 #Store 'l'
+syscall
+sub $a0, 98 #Start new line
+syscall
+sub $v0, 1 #Store exit commmand in v0
 syscall
