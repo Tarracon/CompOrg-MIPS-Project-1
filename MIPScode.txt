@@ -1,8 +1,21 @@
 .text 
 main: #Code for MIPS follows this line
-li $v0, 11 #Load command to print characters in v0 register
-la $a0, 64 #Load character '@' into 4 register
-syscall #Call for computer to print character loaded in a0
-sub $v0, 10 #Subract from v0 to get 1, the command to print integers
-sub $a0, 64 # subtract from a0 to print 0
-syscall #Call for system to print int stored in a0
+  li $v0, 11 #Load command to print characters in v0 register
+  la $a0, 64 #Load character '@' into 4 register
+  syscall #Call for computer to print character loaded in a0
+  sub $v0, 10 #Subract from v0 to get 1, the command to print integers
+  sub $a0, 64 # subtract from a0 to print 0
+  syscall #Call for system to print int stored in a0
+  addi $a0, 2 #Make 4 register store 2
+	syscall #Call to print int stored in a0
+	addi $a0, 6 #Make 4th register store 8 by adding 6
+	syscall 
+	sub $a0, 5 #Make 4th register store 3 by adding 5
+	syscall
+	addi $a0, 4 #Make 4th register store 7 by adding 4
+	syscall
+	sub $a0, 3 #Make 4th register store 4
+  syscall
+	syscall #Print stored in a0 twice
+	addi $a0, 4 #Make 4th register store 8
+	syscall
