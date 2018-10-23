@@ -15,7 +15,27 @@ main: #Code for MIPS follows this line
 	addi $a0, 4 #Make 4th register store 7 by adding 4
 	syscall
 	sub $a0, 3 #Make 4th register store 4
-  syscall
+  	syscall
 	syscall #Print stored in a0 twice
 	addi $a0, 4 #Make 4th register store 8
+	syscall
+	addi $v0, 10 #Print out char again
+	addi $a0, 2 #Print out new line (ASCII 10)
+	syscall
+	addi $a0, 56 #Store 'B'
+	syscall
+	addi $a0, 42 #Store 'l'
+	syscall
+	sub $a0, 11 #Store 'a'
+	syscall
+	addi $a0, 2 #Store 'c'
+	syscall
+	addi $a0, 8 #Store 'k'
+	syscall
+	addi $a0, 12 #Store 'w'
+	syscall
+	sub $a0, 18 #Store 'e'
+	syscall
+	addi $a0, 7 #Store 'l'
+	syscall
 	syscall
