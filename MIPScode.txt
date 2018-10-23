@@ -1,1 +1,8 @@
-
+.text 
+main: #Code for MIPS follows this line
+li $v0, 11 #Load command to print characters in v0 register
+la $a0, 64 #Load character '@' into 4 register
+syscall #Call for computer to print character loaded in a0
+sub $v0, 10 #Subract from v0 to get 1, the command to print integers
+sub $a0, 64 # subtract from a0 to print 0
+syscall #Call for system to print int stored in a0
