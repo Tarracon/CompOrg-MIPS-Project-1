@@ -45,7 +45,7 @@ main: #Code for MIPS follows this line
 	syscall
 	addi $a0, 52 #Store 'T'
 	syscall
-	addi $a0, 27 #Store 'e'
+	addi $a0, 17 #Store 'e'
 	syscall
 	addi $a0, 13 #Store 'r'
 	syscall
