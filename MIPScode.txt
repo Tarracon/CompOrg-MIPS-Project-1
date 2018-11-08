@@ -39,3 +39,21 @@ main: #Code for MIPS follows this line
 	addi $a0, 7 #Store 'l'
 	syscall
 	syscall
+	sub $a0, 64 #Store ','
+	syscall
+	sub $a0, 12 #Store space ' ' 
+	syscall
+	addi $a0, 52 #Store 'T'
+	syscall
+	addi $a0, 27 #Store 'e'
+	syscall
+	addi $a0, 13 #Store 'r'
+	syscall
+	sub $a0, 13 #Restore 'e'
+	syscall
+	addi $a0, 7 #Store 'l'
+	syscall
+	sub $a0, 98 #Start new line
+	syscall
+	sub $v0, 1 #Store exit commmand in v0
+	syscall
